@@ -1,0 +1,193 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root{
+    --roxo:rgb(97,0,101);
+    --rosa:rgb(199, 0, 206);
+    --preto:rgba(0, 0, 0, 0.76);
+    --branco:rgb(255, 255, 255);
+}
+
+/*header*/
+.header{
+    height: 700px;
+    background-image: url(../assests/unhas1.1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.div2header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nome-empresa{
+    font-size: 3rem;
+    font-weight: bolder;
+    color:var(--rosa);
+}
+
+.iframe{
+    height: 200px;
+    width: 90%;
+    margin-top: 24px;
+}
+
+.ideia{
+    margin-top: 15px;
+    font-size: 2em;
+    color: var(--branco);
+}
+
+.btn{
+    margin-top: 24px;
+    height: 50px;
+    width: 70%;
+}
+
+/*section1main*/
+.section1main{
+    padding: 30px;
+    text-align: center;
+}
+
+.text-cases{
+    color: var(--rosa);
+    text-align: left;
+}
+
+.divsection2{
+    margin-top: 24px;
+    padding: 10px;
+}
+
+.text-tecnicas{
+    font-size: 18px;
+   
+}
+
+.divsection3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.card-img-top{
+    height: 200px;
+}
+
+/*section2main*/
+.section2main{
+    background-color: var(--roxo);
+    min-height: 400px;
+    padding: 30px;
+}
+
+.title-section2>h2{
+    color: var(--branco);
+}
+
+.title-section2>span{
+    color: var(--rosa);
+    font-size: 2rem;
+}
+
+.div-especialidades{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.letra{
+    color: var(--rosa);
+    font-weight: bold;
+    font-size: 18px;
+}
+.div-especialidades-span{
+    color: var(--branco);
+}
+
+/*section3main*/
+.section3main{
+    padding: 30px;
+    min-height: 400px;
+    background-image: url(https://www.hogarmania.com/archivos/201710/belleza-manicura-color-negro-XxXx80.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section3main>div>h1{
+    color: var(--rosa);
+}
+
+.conteudo{
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--preto);
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--branco);
+    font-size: 24px;
+}
+
+.confirmed{
+    height: 30px;
+}
+
+/*footer*/
+.footer{
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--roxo);
+}
+
+.info{
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+@media screen and (max-width:1024px){
+    .divsection3{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .header{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .divsection3{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 10px;
+    }
+    .conteudo{
+        padding: 5px;
+        width: 90%;
+    }
+}
